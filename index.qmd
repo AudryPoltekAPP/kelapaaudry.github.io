@@ -1,0 +1,392 @@
+---
+title: "Besar Pengaruh Ekspor Kelapa dan turunannya terhadap Ekspor Indonesia."
+subtitle: "Metode Penelitian Politeknik APP Jakarta"
+author: "Audry Randiva Aisyah Iskandar"
+date: 2024-01-09
+number-sections: true
+format:
+  html: default
+  docx: default
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+![](poltekapp.jpg)
+
+## Pendahuluan
+
+### Latar belakang
+
+Indonesia, sebagai produsen kelapa terbesar di dunia, memiliki peran
+penting dalam ekonomi global, khususnya dalam sektor ekspor. Komoditas
+kelapa dan turunannya seperti kopra, briket, dan sabut kelapa,
+berkontribusi signifikan terhadap total nilai ekspor Indonesia. Kelapa,
+sebagai komoditas utama, berkontribusi dalam penerimaan devisa negara,
+penyediaan lapangan kerja, pemenuhan kebutuhan konsumsi dalam negeri,
+dan bahan baku berbagai industri dalam negeri. Ekspor kelapa terbesar
+berasal dari produk turunan berupa minyak kelapa setengah jadi dengan
+kontribusi 384 juta dolar AS atau 30,21 persen dari total ekspor
+komoditas kelapa Indonesia.
+
+Selain itu, kopra juga memiliki peran penting dalam ekspor Indonesia.
+Pada tahun 2020, Indonesia berhasil mengekspor kopra sebesar 705 ribu
+ton senilai USD 220,6 juta. Sebanyak tujuh puluh persen dari total
+ekspor kopra Indonesia didistribusikan ke India, yang merupakan negara
+pengimpor utama kopra Indonesia.
+
+Briket arang kelapa Indonesia juga memiliki potensi ekspor yang besar
+karena kualitas produknya. Pada tahun 2018, ekspor arang kelapa
+Indonesia mencapai 200,1 ribu ton dengan nilai ekspor mencapai USD 155,6
+juta. Dengan demikian, dapat dilihat bahwa ekspor komoditas kelapa dan
+turunannya memiliki pengaruh signifikan terhadap total nilai ekspor
+Indonesia.
+
+Namun, sejauh mana pengaruh ekspor komoditas kelapa dan turunannya
+terhadap total nilai ekspor Indonesia masih belum jelas. Oleh karena
+itu, penelitian ini bertujuan untuk menganalisis pengaruh ekspor
+komoditas kelapa dan turunannya terhadap total nilai ekspor Indonesia
+menggunakan metode regresi linear berganda. Metode ini memungkinkan kita
+untuk memahami hubungan antara variabel dependen (total nilai ekspor
+Indonesia) dan variabel independen (ekspor komoditas kelapa dan
+turunannya) dengan lebih baik. Penelitian ini diharapkan dapat
+memberikan wawasan baru tentang pentingnya komoditas kelapa dan
+turunannya dalam ekonomi Indonesia.
+
+### Ruang lingkup
+
+Ruang lingkup penelitian ini mencakup:
+
+1.  **Analisis Ekspor Komoditas Kelapa**: Penelitian ini akan
+    menganalisis data ekspor komoditas kelapa dan turunannya dari
+    Indonesia, termasuk kopra, briket, dan sabut kelapa. Analisis ini
+    akan mencakup volume dan nilai ekspor, serta pasar ekspor utama.
+
+2.  **Pengaruh terhadap Total Nilai Ekspor Indonesia**: Fokus utama
+    penelitian ini adalah untuk menentukan sejauh mana ekspor komoditas
+    kelapa dan turunannya mempengaruhi total nilai ekspor Indonesia. Ini
+    akan dilakukan dengan membandingkan data ekspor komoditas kelapa dan
+    turunannya dengan data total nilai ekspor Indonesia.
+
+3.  **Metode Regresi Linear Berganda**: Penelitian ini akan menggunakan
+    metode regresi linear berganda untuk menganalisis data. Metode ini
+    memungkinkan penelitian untuk memahami hubungan antara variabel
+    dependen (total nilai ekspor Indonesia) dan variabel independen
+    (ekspor komoditas kelapa dan turunannya).
+
+4.  **Periode Waktu**: Penelitian ini akan mencakup data ekspor dari
+    periode waktu tertentu. Periode waktu ini akan ditentukan
+    berdasarkan ketersediaan data.
+
+### Rumusan masalah
+
+Berikut adalah rumusan masalah yang dapat diangkat dari latar belakang
+penelitian:
+
+1.  Bagaimana pengaruh ekspor komoditas kelapa terhadap total nilai
+    ekspor Indonesia?
+
+2.  Bagaimana pengaruh ekspor kopra terhadap total nilai ekspor
+    Indonesia?
+
+3.  Bagaimana pengaruh ekspor briket arang kelapa terhadap total nilai
+    ekspor Indonesia?
+
+4.  Bagaimana pengaruh ekspor sabut kelapa terhadap total nilai ekspor
+    Indonesia?
+
+5.  Apakah ada perbedaan signifikan dalam pengaruh ekspor komoditas
+    kelapa dan turunannya terhadap total nilai ekspor Indonesia?
+
+Rumusan masalah ini akan dijawab melalui analisis data ekspor
+menggunakan metode regresi linear berganda. Penelitian ini diharapkan
+dapat memberikan pemahaman yang lebih baik tentang pengaruh ekspor
+komoditas kelapa dan turunannya terhadap total nilai ekspor Indonesia.
+
+### Tujuan dan manfaat penelitian
+
+Berikut adalah tujuan dan manfaat dari penelitian ini:
+
+**Tujuan Penelitian:**
+
+1.  Untuk mengetahui pengaruh ekspor komoditas kelapa terhadap total
+    nilai ekspor Indonesia.
+
+2.  Untuk mengetahui pengaruh ekspor kopra terhadap total nilai ekspor
+    Indonesia.
+
+3.  Untuk mengetahui pengaruh ekspor briket arang kelapa terhadap total
+    nilai ekspor Indonesia.
+
+4.  Untuk mengetahui pengaruh ekspor sabut kelapa terhadap total nilai
+    ekspor Indonesia.
+
+5.  Untuk mengetahui perbedaan signifikan dalam pengaruh ekspor
+    komoditas kelapa dan turunannya terhadap total nilai ekspor
+    Indonesia.
+
+**Manfaat Penelitian:**
+
+1.  **Akademis**: Hasil penelitian ini dapat menjadi referensi bagi
+    penelitian selanjutnya yang berkaitan dengan ekspor komoditas kelapa
+    dan turunannya.
+
+2.  **Pemerintah**: Hasil penelitian ini dapat menjadi bahan
+    pertimbangan dalam membuat kebijakan ekspor, khususnya terkait
+    dengan komoditas kelapa dan turunannya.
+
+3.  **Masyarakat**: Hasil penelitian ini dapat memberikan pemahaman
+    kepada masyarakat tentang pentingnya komoditas kelapa dan turunannya
+    dalam perekonomian Indonesia, khususnya dalam sektor ekspor.
+
+### Package
+
+```{r}
+#| warning: false
+#| echo: true
+setwd("D:/METOPEL UAS/AUDRY METOPEL")
+library(readxl)
+library(tidyverse)
+library(kableExtra)
+```
+
+## Studi pustaka
+
+Kelapa atau yang memiliki nama latin Cocos Nucifera adalah tanaman hasil
+perkebunan yang banyak ditemui di seluruh wilayah Indonesia. Struktur
+buah kelapa terdiri dari sabut (35%), tempurung (12%), air kelapa (15%),
+tempurung (12%) serta bagian lain seperti tongkol buah, lembaga, kulit
+luar serta testa). Hampir seluruh komponen pada kelapa bisa
+dimanfaatkan, namun daging buah kelapa menjadi bagian yang paling banyak
+digunakan sebagai bahan makanan maupun bahan baku dalam industri
+(Setiaji, B., 2006 dalam Putri, P.M dan Da Rato, Y.Y,. 2022).
+
+Industri kelapa skala kecil dalam setiap proses produksinya menghasilkan
+buangan atau hasil samping yang tidak digunakan sehingga menjadi limbah.
+Limbah padat yang dihasilkan yaitu berupa tempurung kelapa, sabut
+kelapa, blondo serta ampas kelapa. Sedangkan, limbah cair dari industri
+kelapa dapat bersumber dari air kelapa, air sisa pembuatan VCO serta air
+sisa pencucian alat maupun bahan (Sulistyorini, J., dkk, 2020).
+Sulistyorini, J., Sukron, A., Pojoh, B., & Sjarif, S. R. 2020.
+“Penerapan Sistim Produksi Bersih Di Sentra Ikm Kelapa Terpadu Kota
+Bitung.” Jurnal Penelitian Teknologi Industri 12(1): 41–51.
+
+Objek penelitian ini adalah Industri Komoditas Kelapa dan juga
+turunannya dimana data yang diperlukan untuk memberi gambaran lengkap
+mengenai objek dan variabel yang berkenaan dengan objek yang diteliti
+diperoleh dari data sekunder seperti buku, jurnal, serta
+literatur-literatur kepustakaan lainnya. Menurut Dewi, Z. R. A. T., dkk
+(2015) studi literatur ialah informasi dan pengumpulan data yang
+dilakukan dengan cara mengumpulkan pengetahuan dari berbagai sumber
+seperti karya tulis, buku, catatan maupun sumber lain yang berkenaan
+dengan objek yang akan diteliti.
+
+Ekspor adalah suatu kegiatan ekonomi menjual produk dalam negeri ke
+pasar di luar negeri, sedangkan impor merupakan kegiatan ekonomi membeli
+produk luar negeri untuk keperluan atau dipasarkan di dalam negeri
+(Murni,2009:208).
+
+Suatu negara melakukan kegiatan ekspor karena untuk memenuhi kebutuhan
+barang dan jasa Negara lain. Keuntungan melakukan ekspor menurut Sukirno
+(2010:205) adalah:
+
+a.  Memperluas Pasar Kegiatan ekspor merupakan cara untuk memasarkan
+    produk-produk dalam negeri ke luar negeri. Adanya kegiatan ekspor,
+    produk yang dihasilkan di dalam negeri tidak hanya dikonsumsi oleh
+    penduduk dalam negeri.
+
+b.  Menambah Devisa Negara Kegiatan ekspor memugkinkan eksportir dalam
+    negeri memasarkan produknya ke luar negeri. Transaksi ekspor ini
+    dapat menambah devisa Negara yang merupakan salah satu sumber
+    penerimaan Negara.
+
+c.  Memperluas Lapangan Kerja Kegiatan ekspor akan membuka lapangan
+    pekerjaan bagi masyarakat. Dengan semakin banyaknya ekspor maka
+    produksi yang dihasilkan akan semakin banyak. Peningkatan jumlah
+    produksi ini akan meningkatkan penyerapan tenaga kerja.
+
+“Exports are domestically produced goods and services that are sold
+abroad”, Ekspor mempunyai peran strategis, terlebih dalam memberikan
+kontribusi terhadap pembangunan ekonomi suatu negara dan cadangan devisa
+negara'', (Mankiw, 2012:272).
+
+Nilai ekspansi ekspor juga menentukan besaran penyerapakan tenaga kerja.
+Ketika nilai ekspor meningkat, dapat diartikan permintaan barang dari
+negara lain mengalami peningkatan. Jika ekspor menurun sebaliknya dapat
+diartikan permintaan negara lain terhadap barang ekspor mengalami
+pelemahan. Ekspor merupakan injeksi masuknya aliran pendapatan seperti
+halnya investasi.
+
+Sumberdaya ikan pelagis besar di Wilayah Pengelolaan Perikanan (WPP) 573
+merupakan salah satu komoditas penting perikanan Indonesia yang sudah
+dieksploitasi sejak lama. Tuna sirip kuning (Thunnus albacares)
+merupakan hasil tangkapan terbanyak dibandingkan dengan jenis tuna
+lainnya di Indonesia. Hasil tangkapan tuna di Indonesia secara
+keseluruhan pada kurun waktu 2004 hingga 2011 mencapai 1.297.062 ton,
+dari jumlah ini sebanyak 69% hasil tangkapan adalah tuna sirip kuning
+(Direktorat Jenderal Perikanan Tangkap, 2012).
+
+Tingginya permintaan tuna sirip kuning di pasar dunia dalam beberapa
+tahun terakhir berdampak terhadap pemanfaatan yang makin intensif. Hal
+ini membuat ketersediaan stok tuna sirip kuning (yellowfin tuna) di
+Samudra Hindia diperkirakan pada saat ini, dalam keadaan lebih tangkap
+(IOTC, 2016).
+
+Kondisi ini akan menjadi lebih buruk lagi jika sumber daya ini tidak
+dikelola dengan lebih baik. Oleh karena itu, pengelolaan secara tepat
+dan bertanggungjawab penting dilakukan untuk melindungi spesies tuna.
+Salah satunya dengan mengkaji alat tangkap yang digunakan.
+
+Tuna sirip kuning merupakan salah satu hasil tangkapan utama dari
+nelayan pancing ulur yang beroperasi di perairan sekitar rumpon Muhammad
+& Barata, (2012).
+
+## Metode penelitian
+
+### Data
+
+| tahun | ekspor                | kelapa            | briket            | kopra            | sabut            | minyak              |
+|----------|----------|----------|----------|----------|----------|----------|
+| 2003  | \$ 71.553.141.044,99  | \$ 83.054.000,00  | \$ 17.568.000,00  | \$ 4.281.000,00  | \$ 300.000,00    | \$ 418.286.000,00   |
+| 2004  | \$ 82.744.351.781,02  | \$ 94.429.000,00  | \$ 19.583.000,00  | \$ 8.511.000,00  | \$ 599.000,00    | \$ 767.624.000,00   |
+| 2005  | \$ 97.387.627.566,00  | \$ 140.202.000,00 | \$ 24.501.000,00  | \$ 14.417.000,00 | \$ 392.000,00    | \$ 1.001.508.000,00 |
+| 2006  | \$ 113.143.425.287,80 | \$ 134.032.000,00 | \$ 27.730.000,00  | \$ 7.016.000,00  | \$ 833.000,00    | \$ 887.149.000,00   |
+| 2007  | \$ 127.226.102.177,01 | \$ 167.306.000,00 | \$ 46.104.000,00  | \$ 8.821.000,00  | \$ 3.098.000,00  | \$ 1.568.215.000,00 |
+| 2008  | \$ 152.090.401.421,80 | \$ 172.815.000,00 | \$ 54.793.000,00  | \$ 5.149.000,00  | \$ 2.605.000,00  | \$ 2.193.091.000,00 |
+| 2009  | \$ 130.357.798.591,19 | \$ 151.912.000,00 | \$ 64.854.000,00  | \$ 7.733.000,00  | \$ 5.631.000,00  | \$ 1.479.158.000,00 |
+| 2010  | \$ 183.480.562.961,19 | \$ 162.545.000,00 | \$ 64.920.000,00  | \$ 11.451.000,00 | \$ 9.223.000,00  | \$ 2.293.761.000,00 |
+| 2011  | \$ 235.095.129.135,96 | \$ 257.951.000,00 | \$ 85.707.000,00  | \$ 21.863.000,00 | \$ 16.644.000,00 | \$ 3.051.634.000,00 |
+| 2012  | \$ 225.744.403.267,74 | \$ 213.960.000,00 | \$ 105.786.000,00 | \$ 26.637.000,00 | \$ 15.206.000,00 | \$ 2.458.230.000,00 |
+| 2013  | \$ 218.308.408.831,08 | \$ 224.822.000,00 | \$ 118.781.000,00 | \$ 13.603.000,00 | \$ 7.854.000,00  | \$ 1.829.519.000,00 |
+| 2014  | \$ 210.820.082.828,47 | \$ 346.571.000,00 | \$ 156.524.000,00 | \$ 41.627.000,00 | \$ 12.474.000,00 | \$ 2.484.350.000,00 |
+| 2015  | \$ 182.158.298.804,88 | \$ 399.362.000,00 | \$ 185.283.000,00 | \$ 33.214.000,00 | \$ 12.402.000,00 | \$ 2.378.262.000,00 |
+| 2016  | \$ 177.886.012.743,86 | \$ 373.433.000,00 | \$ 190.555.000,00 | \$ 10.562.000,00 | \$ 8.301.000,00  | \$ 2.726.686.000,00 |
+| 2017  | \$ 204.924.485.909,91 | \$ 554.973.000,00 | \$ 241.267.000,00 | \$ 29.641.000,00 | \$ 8.220.000,00  | \$ 3.028.314.000,00 |
+| 2018  | \$ 218.905.647.884,81 | \$ 429.614.000,00 | \$ 297.801.000,00 | \$ 37.892.000,00 | \$ 11.250.000,00 | \$ 2.424.405.000,00 |
+| 2019  | \$ 208.057.763.662,38 | \$ 399.027.000,00 | \$ 280.104.000,00 | \$ 29.525.000,00 | \$ 12.292.000,00 | \$ 1.711.900.000,00 |
+| 2020  | \$ 183.546.577.015,85 | \$ 544.110.000,00 | \$ 272.200.000,00 | \$ 36.545.000,00 | \$ 9.239.000,00  | \$ 1.877.160.000,00 |
+| 2021  | \$ 254.008.548.673,18 | \$ 556.848.000,00 | \$ 291.961.000,00 | \$ 43.146.000,00 | \$ 10.046.000,00 | \$ 2.885.387.000,00 |
+| 2022  | \$ 323.079.953.659,96 | \$ 368.857.000,00 | \$ 360.325.000,00 | \$ 34.997.000,00 | \$ 6.304.000,00  | \$ 3.127.463.000,00 |
+
+Penelitian ini menggunakan data time series yang kemudian diproses
+menggunakan metode regresi multivariat untuk melihat hubungan antara
+besaran nilai ekspor komoditas buah kelapa beserta dengan turunannya
+terhadap total nilai ekspor Indonesia.
+
+### Metode analisis
+
+Metode yang dipilih adalah regresi Multivariat dengan lebih dari satu
+variabel independen. Dimana kita mencari seberapa besar pengaruh ekspor
+kelapa dan turunannya terhadap total ekspor Indonesia. Spesifikasi yang
+dilakukan adalah:
+
+$$
+Y=\beta_0 + \beta_1 X1+\beta_2 X2+\beta_3 X3+\beta_4 X4+\beta_5 X5+\mu.
+$$ di mana $Y$=Nilai Total Ekspor, $X1$ = Ekspor Kelapa, $X2$ = Ekspor
+Briket Kelapa, $X3$ = Ekspor KopraKelapa, $X4$ = Ekspor Serabut Kelapa,
+dan $X5$ = Ekspor Minyak Kelapa (VCO).
+
+## Pembahasan
+
+### Pembahasan masalah
+
+#### Plot dan Data
+
+```{r}
+#impor dataset
+read_excel("kelapa.xlsx")
+dat <- read_excel("kelapa.xlsx")
+kbl(dat) %>%
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+reg1<-lm(ekspor~kelapa+briket+kopra+sabut+minyak,data=dat)
+```
+
+```{r}
+dat$m<-resid(reg1)
+plot(dat$ekspor,dat$m,xlab="Total Nilai Ekspor",ylab="error")
+abline(h=0)
+
+```
+
+```{r}
+dat$m<-resid(reg1)
+plot(dat$kelapa,dat$m,xlab="Ekspor kelapa",ylab="error")
+abline(h=0)
+```
+
+```{r}
+dat$m<-resid(reg1)
+plot(dat$briket,dat$m,xlab="Ekspor Briket",ylab="error")
+abline(h=0)
+```
+```{r}
+dat$m<-resid(reg1)
+plot(dat$kopra,dat$m,xlab="Ekspor Kopra",ylab="error")
+abline(h=0)
+```
+
+```{r}
+dat$m<-resid(reg1)
+plot(dat$sabut,dat$m,xlab="Ekspor Sabut Kelapa",ylab="error")
+abline(h=0)
+```
+
+```{r}
+dat$m<-resid(reg1)
+plot(dat$minyak,dat$m,xlab="Ekspor Minyak Kelapa (VCO)",ylab="error")
+abline(h=0)
+
+```
+
+### Analisis masalah
+
+Hasil regresinya adalah
+
+```{r}
+reg1<-lm(ekspor~kelapa+briket+kopra+sabut+minyak,data=dat)
+summary(reg1)
+```
+
+Dari hasil regresi yang di tampilkan, dimana R-squared menunjukan hasil
+0.9262, yang artinya angka tersebut mengandung makna bahwa seluruh variabel X yang ada secara simultan berpengaruh terhadap Y sebesar 92,62%. sedangkan sisanya
+dipengaruhi oleh variabel lain di luar persamaan ini.
+
+Untuk besaran pengaruh variabel X1 yakni Buah Kelapa, menyatakan hasil negatif signifikan dimana setiap 1 USD peningkatan nilai ekspor komoditas Buah kelapa akan menurunkan Total Nilai Ekspor Indonesia sebesar 2,7 USD.
+
+Lalu pada variabel Briket, menunjukan hasil positif sangat signifikan yang setiap peningkatan nilai ekspor briket 1 USD akan meningkatan total nilai keseluruhan ekspor Indonesia sebesar 4,3 USD.
+
+Kemudian 2 komoditas lainnya yang memiliki pengaruh positif namun tidak signifikan yakni Kopra dan Sabut kelapa, yang masing-masing turut meningkatkan total nilai ekspor Indonesia sebesar 9,7 USD dan 1,5 USD.
+
+Terakhir komoditas Minyak Kelapa (VCO), memberikan pengaruh positif sangat signifikan yang tiap kenaikan ekspor komoditas ini sebesar 1 USD akan meningkatkan total nilai ekspor Indonesia sebesar 4,7 USD.
+## Kesimpulan
+
+Sejalan dengan amanat Presiden RI, bahwa Indonesia diharapkan dapat melakukan hilirisasi terhadap produk-produk baku dalam hal ini seperti kelapa. Selain tidak banyak menghasilkan keuntungan juga dapat menyebabkan kelangkaan di dalam negeri untuk produk baku yang secara konsisten tetap melakukan ekspor.
+
+Pemerintah berupaya agar komoditas yang masih dasar ini agar terlebih dahulu di olah menjadi komoditas yang setengah jadi atau sudah jadi (siap pakai), untuk meningkatkan nilai jual dari komoditas tersebut dan juga memanfaatkan seluruh bagian yang mungkin dapat dihasilkan dari komoditas baku.
+
+Seperti kelapa yang jika kita ekspor kelapa secara utuh, selain nilainya tidak terlalu tinggi. Kita juga tidak dapat memanfaatkan limbah hasil pengolahan komoditas tersebut, seperti batok kelapa yang dapat dijadikan briket arang, dagingnya yang dapat dijadikan kopra, sabutnya yang dapat dijadikan berbagai macam kerajinan atau bahan dasar pendukung industri dan lain-lain.
+
+Dan dari hasil regresi yang ditampilkan, terbukti bahwa produk turunan kelapa justru memiliki nilai yang lebih besar dan memberikan pengaruh yang lebih banyak dibandingkan buah kelapa itu sendiri.
+
+## Referensi
+
+Putri, Pierina dan Rato, Yoseph. 2022. “Strategi Pemasaran Minyak Kelapa
+Murni (Virgin Coconut Oil) Di UD. Cakrawala, Kelurahan Hewuli, Kecamatan
+Alok Barat, Kabupaten Sikka.” Jurnal Ilmiah Wahana Pendidikan
+https://jurnal.unibrah.ac.id/index.php/JIWP8(1):391–402.
+http://jurnalmahasiswa.unesa.ac.id/index.php/jurnal-penelitianpgsd/article/view/23921.
+
+Sulistyorini, J., Sukron, A., Pojoh, B., & Sjarif, S. R. 2020.
+“Penerapan Sistim Produksi Bersih Di Sentra Ikm Kelapa Terpadu Kota
+Bitung.” Jurnal Penelitian Teknologi Industri 12(1): 41–51.
+
+Dewi, Z. R. A. T., Ahmadi, C., & Suardika, I. G. 2015. “Dashboard
+Executive Information System Pada Banjar Berbasis Web.” Josinfo 1(1):
+1–9.
+
+Murni, A. 2009. Ekonomika Makro. Bandung: PT Refika Aditama
+
+Sukirno, Sadono. 2010. Makro Ekonomi Teori Pengantar. Edisi ketiga.
+Jakarta: Rajawali Pers
+
+Mankiw, N. G. 2007. Makroekonomi. Edisi keenam. Jakarta: Erlangga.
