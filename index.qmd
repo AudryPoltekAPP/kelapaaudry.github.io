@@ -1,7 +1,7 @@
 ---
 title: "Besar Pengaruh Ekspor Kelapa dan turunannya terhadap Ekspor Indonesia."
 subtitle: "Metode Penelitian Politeknik APP Jakarta"
-author: "Audry Randiva Aisyah Iskandar"
+author: "Audrya Randiva Aisyah Iskandar"
 date: 2024-01-09
 number-sections: true
 format:
